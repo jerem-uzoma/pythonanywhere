@@ -1,0 +1,1 @@
+@"c:\users\fslclient\pythondjango\clone\blog\blogvenv\scripts\python.exe" "c:\users\fslclient\pythondjango\clone\blog\blogvenv\Scripts\markdown_py" %*

@@ -1,0 +1,138 @@
+ERROR 2017-02-08 10:18:03,424 views 6411 140350626912000 邮件发送失败: (535, b'5.7.8 authentication failed')ERROR 2017-08-30 19:41:52,902 exception 7412 5340 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\FSLClient\pythondjango\clone\blog\blogvenv\lib\site-packages\django\template\utils.py", line 65, in __getitem__
+    return self._engines[alias]
+KeyError: 'django'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\FSLClient\pythondjango\clone\blog\blogvenv\lib\site-packages\django\template\backends\django.py", line 126, in get_package_libraries
+    module = import_module(entry[1])
+  File "C:\Users\FSLClient\AppData\Local\Programs\Python\Python36-32\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "C:\Users\FSLClient\pythondjango\clone\blog\blogvenv\lib\site-packages\bootstrap3\templatetags\bootstrap3.py", line 16, in <module>
+    from ..components import render_icon, render_alert
+  File "C:\Users\FSLClient\pythondjango\clone\blog\blogvenv\lib\site-packages\bootstrap3\components.py", line 4, in <module>
+    from django.forms.widgets import flatatt
+ImportError: cannot import name 'flatatt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\FSLClient\pythondjango\clone\blog\blogvenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\FSLClient\pythondjango\clone\blog\blogvenv\lib\site-packages\django\core\handlers\base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\FSLClient\pythondjango\clone\blog\blogvenv\lib\site-packages\django\core\handlers\base.py", line 215, in _get_response
+    response = response.render()
+  File "C:\Users\FSLClient\pythondjango\clone\blog\blogvenv\lib\site-packages\django\template\response.py", line 107, in render
+    self.content = self.rendered_content
+  File "C:\Users\FSLClient\pythondjango\clone\blog\blogvenv\lib\site-packages\django\template\response.py", line 82, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\FSLClient\pythondjango\clone\blog\blogvenv\lib\site-packages\django\template\response.py", line 64, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\FSLClient\pythondjango\clone\blog\blogvenv\lib\site-packages\django\template\loader.py", line 44, in select_template
+    engines = _engine_list(using)
+  File "C:\Users\FSLClient\pythondjango\clone\blog\blogvenv\lib\site-packages\django\template\loader.py", line 72, in _engine_list
+    return engines.all() if using is None else [engines[using]]
+  File "C:\Users\FSLClient\pythondjango\clone\blog\blogvenv\lib\site-packages\django\template\utils.py", line 89, in all
+    return [self[alias] for alias in self]
+  File "C:\Users\FSLClient\pythondjango\clone\blog\blogvenv\lib\site-packages\django\template\utils.py", line 89, in <listcomp>
+    return [self[alias] for alias in self]
+  File "C:\Users\FSLClient\pythondjango\clone\blog\blogvenv\lib\site-packages\django\template\utils.py", line 80, in __getitem__
+    engine = engine_cls(params)
+  File "C:\Users\FSLClient\pythondjango\clone\blog\blogvenv\lib\site-packages\django\template\backends\django.py", line 30, in __init__
+    options['libraries'] = self.get_templatetag_libraries(libraries)
+  File "C:\Users\FSLClient\pythondjango\clone\blog\blogvenv\lib\site-packages\django\template\backends\django.py", line 48, in get_templatetag_libraries
+    libraries = get_installed_libraries()
+  File "C:\Users\FSLClient\pythondjango\clone\blog\blogvenv\lib\site-packages\django\template\backends\django.py", line 113, in get_installed_libraries
+    for name in get_package_libraries(pkg):
+  File "C:\Users\FSLClient\pythondjango\clone\blog\blogvenv\lib\site-packages\django\template\backends\django.py", line 130, in get_package_libraries
+    "trying to load '%s': %s" % (entry[1], e)
+django.template.library.InvalidTemplateLibrary: Invalid template library specified. ImportError raised when trying to load 'bootstrap3.templatetags.bootstrap3': cannot import name 'flatatt'
+ERROR 2017-08-30 19:43:43,875 exception 7412 1788 Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\FSLClient\pythondjango\clone\blog\blogvenv\lib\site-packages\django\template\utils.py", line 65, in __getitem__
+    return self._engines[alias]
+KeyError: 'django'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\FSLClient\pythondjango\clone\blog\blogvenv\lib\site-packages\django\template\backends\django.py", line 126, in get_package_libraries
+    module = import_module(entry[1])
+  File "C:\Users\FSLClient\AppData\Local\Programs\Python\Python36-32\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "C:\Users\FSLClient\pythondjango\clone\blog\blogvenv\lib\site-packages\bootstrap3\templatetags\bootstrap3.py", line 16, in <module>
+    from ..components import render_icon, render_alert
+  File "C:\Users\FSLClient\pythondjango\clone\blog\blogvenv\lib\site-packages\bootstrap3\components.py", line 4, in <module>
+    from django.forms.widgets import flatatt
+ImportError: cannot import name 'flatatt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\FSLClient\pythondjango\clone\blog\blogvenv\lib\site-packages\django\core\handlers\exception.py", line 41, in inner
+    response = get_response(request)
+  File "C:\Users\FSLClient\pythondjango\clone\blog\blogvenv\lib\site-packages\django\core\handlers\base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\FSLClient\pythondjango\clone\blog\blogvenv\lib\site-packages\django\core\handlers\base.py", line 215, in _get_response
+    response = response.render()
+  File "C:\Users\FSLClient\pythondjango\clone\blog\blogvenv\lib\site-packages\django\template\response.py", line 107, in render
+    self.content = self.rendered_content
+  File "C:\Users\FSLClient\pythondjango\clone\blog\blogvenv\lib\site-packages\django\template\response.py", line 82, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\FSLClient\pythondjango\clone\blog\blogvenv\lib\site-packages\django\template\response.py", line 64, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\FSLClient\pythondjango\clone\blog\blogvenv\lib\site-packages\django\template\loader.py", line 44, in select_template
+    engines = _engine_list(using)
+  File "C:\Users\FSLClient\pythondjango\clone\blog\blogvenv\lib\site-packages\django\template\loader.py", line 72, in _engine_list
+    return engines.all() if using is None else [engines[using]]
+  File "C:\Users\FSLClient\pythondjango\clone\blog\blogvenv\lib\site-packages\django\template\utils.py", line 89, in all
+    return [self[alias] for alias in self]
+  File "C:\Users\FSLClient\pythondjango\clone\blog\blogvenv\lib\site-packages\django\template\utils.py", line 89, in <listcomp>
+    return [self[alias] for alias in self]
+  File "C:\Users\FSLClient\pythondjango\clone\blog\blogvenv\lib\site-packages\django\template\utils.py", line 80, in __getitem__
+    engine = engine_cls(params)
+  File "C:\Users\FSLClient\pythondjango\clone\blog\blogvenv\lib\site-packages\django\template\backends\django.py", line 30, in __init__
+    options['libraries'] = self.get_templatetag_libraries(libraries)
+  File "C:\Users\FSLClient\pythondjango\clone\blog\blogvenv\lib\site-packages\django\template\backends\django.py", line 48, in get_templatetag_libraries
+    libraries = get_installed_libraries()
+  File "C:\Users\FSLClient\pythondjango\clone\blog\blogvenv\lib\site-packages\django\template\backends\django.py", line 113, in get_installed_libraries
+    for name in get_package_libraries(pkg):
+  File "C:\Users\FSLClient\pythondjango\clone\blog\blogvenv\lib\site-packages\django\template\backends\django.py", line 130, in get_package_libraries
+    "trying to load '%s': %s" % (entry[1], e)
+django.template.library.InvalidTemplateLibrary: Invalid template library specified. ImportError raised when trying to load 'bootstrap3.templatetags.bootstrap3': cannot import name 'flatatt'
+ERROR 2017-08-31 00:36:28,129 exception 7396 4200 Internal Server Error: /search/
+Traceback (most recent call last):
+  File "C:\Users\FSLClient\pythondjango\clone\blog\blogvenv\lib\site-packages\django\utils\datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'search_for'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\FSLClient\pythondjango\clone\blog\blogvenv\lib\site-packages\django\core\handlers\exception.py", line 39, in inner
+    response = get_response(request)
+  File "C:\Users\FSLClient\pythondjango\clone\blog\blogvenv\lib\site-packages\django\core\handlers\base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\FSLClient\pythondjango\clone\blog\blogvenv\lib\site-packages\django\core\handlers\base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\FSLClient\pythondjango\clone\blog\app\views.py", line 109, in blog_search
+    search_for = request.GET['search_for']
+  File "C:\Users\FSLClient\pythondjango\clone\blog\blogvenv\lib\site-packages\django\utils\datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'search_for'"

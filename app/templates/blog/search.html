@@ -1,0 +1,81 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+<div class="container">
+
+    <div class="row">
+
+        <!-- Blog Page entity -->
+        <div class="col-md-8">
+            <!-- Blog body entity -->
+            <h1 class="page-header">
+                {% if cate_name %}
+                    Classification：{{ cate_name }}
+                {% elif tag_name %}
+                    Label: {{ tag_name }}
+                {% else %}
+                    My Article
+                {% endif %}
+            </h1>
+
+            <!-- Blog text -->
+            {% if article_list %}
+                <div>
+                    {% for article in article_list %}
+                        <h2>
+                            <a href="{% url 'app:detail' article.pk %}">{{ article.title }}</a>
+                        </h2>
+                        <p class="lead">
+                            by Uzoma</a>
+                        </p>
+                        <p><span class="glyphicon glyphicon-time"></span> {{ article.created_time }}</p>
+                        <hr>
+                    {% endfor %}
+                </div>
+            {% else %}
+                <h3>Sorry, no search result for content</h3>
+            {% endif %}
+
+        </div>
+
+       <!-- Blog -->
+        <div class="col-md-4">
+
+            <!-- Blog Search Well -->
+
+            <div class="well">
+                <h4>Blog Search</h4>
+                <form action="/search/" method="get">
+                    <div class="input-group">
+                        <input type="text" name="search_for" class="form-control">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit">
+                                <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                        </span>
+                    </div>
+                </form>
+                <!-- /.input-group -->
+            </div>
+
+            <!-- Blog Categories Well -->
+            <!--tag well-->
+            {% include "blog/category.html" %}
+
+
+            <!-- Side Widget Well -->
+            <div class="well">
+                <h4><span class="glyphicon glyphicon-align-justify"></span>Blog introduction</h4>
+                <p>This is a Beautiful blog for beautiful people. </p>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /.row -->
+
+</div>
+
+{% endblock content %}
+
+
